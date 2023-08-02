@@ -465,23 +465,11 @@ function createnotification(id) {
 // alert("Welcome Back");
 
 
-//  chrome.alarms.create("https://developer.chrome.com/docs/extensions/reference/", { when:new Date('Sun Dec 04 2022 08:43:31 GMT+0530 (India Standard Time)').getTime()});
 
 //----------------------------Collect----------------------------------
 
 {
-    var genUserID = "";
-    var isNewUser = false;
-    var isUnique = false;
-    chrome.storage.local.get(["NCPCID"]).then((result) => {
-        genUserID = result.NCPCID;
-        // console.log(genUserID);
-        if (localStorage.getItem("NCPCID") === null) {
-            isNewUser = true;
-            localStorage.setItem("NCPCID", genUserID);
-        } else {
-            genUserID = localStorage.getItem("NCPCID");
-        }
+    
         var currDay = new Date();
         var year = currDay.getFullYear();
         var month = String(currDay.getMonth() + 1).padStart(2, '0');
