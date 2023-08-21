@@ -1,4 +1,4 @@
-# cp-calendar-extension
+# CP Calendar Chrome Extension ⭐
 
 The CP Calendar Chrome Extension is a browser extension offering coding enthusiasts a streamlined way to track upcoming coding competitions from various platforms.
 
